@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace MyWebsite
 {
@@ -7,7 +8,14 @@ namespace MyWebsite
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSession();
+            services.AddDistributedRedisCache(options =>
+            {
+                options.Configuration = "192.168.99.100:6379";
+            });
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(10);
+            });
             services.AddMvc();
         }
 
