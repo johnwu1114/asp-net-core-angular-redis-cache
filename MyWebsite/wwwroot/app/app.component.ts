@@ -15,7 +15,7 @@ class ResultModel {
 export class AppComponent {
     private api: string = "/api/authentication";
     private captchaUrl: string = `${this.api}/captcha`;
-    title: string = "Login";
+    title: string = "Redis Session";
     isLogin: boolean;
     message: string;
     username: string;
