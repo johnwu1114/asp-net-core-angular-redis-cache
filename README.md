@@ -3,10 +3,10 @@ Use the Visual Studio 2017 to development.
 
 # ASP.NET Core + Angular 4 教學 - Redis Session
 
-本篇將介紹 ASP.NET Core 用 Redis Cache 存放 Session，避免 Web Application 重啟後，用戶要重新登入。  
+介紹 ASP.NET Core 用 Redis Cache 存放 Session，避免 Web Application 重啟後，用戶要重新登入。  
 
 Blog：  
-[ASP.NET Core + Angular 4 教學 - Captcha](https://blog.johnwu.cc/article/asp-net-core-angular-4-%E6%95%99%E5%AD%B8-captcha.html)
+[ASP.NET Core + Angular 4 教學 - Redis Session](https://blog.johnwu.cc/article/asp-net-core-angular-4-教學-redis-session.html)
 
 程式碼延續之前範例：  
 [ASP.NET Core + Angular 4 教學 - Captcha](/article/asp-net-core-angular-4-教學-captcha.html)  
